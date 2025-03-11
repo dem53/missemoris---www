@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+   background-color: whitesmoke;
+}
+
+
+
+
+.montserrat {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.raleway {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: calc(300px * 3);
+}
+
+.carousel-item {
+  transition: transform 5s ease-in-out;
+}
+
+.carousel-wrapper .carousel-container {
+  animation: scrollAnimation 30s infinite;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-35%);
+  }
+
+  40% {
+    transform: translateX(-70%);
+  }
+
+  60% {
+    transform: translateX(-100%);
+  }
+
+  70% {
+    transform: translateX(-70);
+  }
+
+  80% {
+    transform : translateX(-35%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    gap: 4px;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+@keyframes slide {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.scroll-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.scroll-text {
+  display: flex;
+  animation: slide 1453s linear infinite;
+  white-space: nowrap; 
+}
+
+.scroll-text span {
+  margin-right: 50px;
+}
