@@ -17,7 +17,6 @@ const bodyParser = require('body-parser');
 
 // Swagger entegrasyonu
 const { swaggerUi, swaggerSpec } = require('./swagger');
-const abone = require('./models/abone.js');
 
 // DIŞ BAĞLANTILARIM 
 dotenv.config();
